@@ -1,6 +1,6 @@
 # Description
 
-* The PoC program exploits the IMFForceDelete function, which exposes an ioctl that allows unprivileged users to delete files and folders. We can turn this into a privilege escalation by using a technique explained by ZDI and Halov, which exploits the MSI rollback mechanism which is designed to maintain system integrity in case of issues. By deleting and recreating it with a weak DACL and fake RBF and RBS files we can gain the ability to make arbitrary changes to the system as NT AUTHORITY\SYSTEM
+* The PoC program exploits the IMFForceDelete driver which exposes an ioctl that allows unprivileged users to delete files and folders. We can turn this into a privilege escalation by using a technique explained by ZDI and Halov, which exploits the MSI rollback mechanism which is designed to maintain system integrity in case of issues. By deleting and recreating it with a weak DACL and fake RBF and RBS files we can gain the ability to make arbitrary changes to the system as NT AUTHORITY\SYSTEM
   
 # VID
 
